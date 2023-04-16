@@ -6,6 +6,6 @@ Proyecto creado para indagar superficialmente en el uso de interfaces graficas d
 # ¿Cómo puedo ejecutarlo?
 
 1. Clona este repositorio en tu máquina local.
-2. Ejecuta main.py en tu entorno de desarrolo de python
+2. Ejecuta main.py en tu entorno de desarrollo de python
 
 Gracias!
