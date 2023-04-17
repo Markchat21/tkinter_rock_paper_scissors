@@ -27,7 +27,7 @@ def check_win(choice):
     else:
         final_result = 'Tu pierdes!'
         print("La PC gana!")
-    label_resultado.config(text=f'Elegiste {game_options[choice]}\nLa PC eligió {pc_choice}, {final_result}')
+    label_result.config(text=f'Elegiste {game_options[choice]}\nLa PC eligió {pc_choice}, {final_result}')
 
 
 # Métodos de los eventos
@@ -57,23 +57,23 @@ window_icon = tk.PhotoImage(file='icon.png')
 main_window.iconphoto(False, window_icon)
 
 # Creamos una etiqueta de bienvenida
-label_bienvenida = ttk.Label(main_window,
+label_welcome = ttk.Label(main_window,
                              text="¡Bienvenido a piedra, papel o tijeras!",
                              font=("Helvetica", 12),
                              foreground='black',
                              background='lightblue',
                              wraplength=200,
                              justify='center')
-label_bienvenida.grid(column=1, sticky='NWSE')
+label_welcome.grid(column=1, sticky='NWSE')
 
 # Creamos una etiqueta para el resultado
-label_resultado = ttk.Label(main_window,
+label_result = ttk.Label(main_window,
                             text="¡Alguien debe ganar!",
                             font="Helvetica",
                             background='lightblue',
                             wraplength=150,
                             justify='center')
-label_resultado.grid(row=3, column=1, columnspan=2, sticky='NSWE', padx=20, pady=20)
+label_result.grid(row=3, column=1, columnspan=2, sticky='NSWE', padx=20, pady=20)
 
 
 # Configurar el grid
