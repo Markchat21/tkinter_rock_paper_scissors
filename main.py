@@ -58,21 +58,21 @@ main_window.iconphoto(False, window_icon)
 
 # Creamos una etiqueta de bienvenida
 label_welcome = ttk.Label(main_window,
-                             text="¡Bienvenido a piedra, papel o tijeras!",
-                             font=("Helvetica", 12),
-                             foreground='black',
-                             background='lightblue',
-                             wraplength=200,
-                             justify='center')
+                          text="¡Bienvenido a piedra, papel o tijeras!",
+                          font=("Helvetica", 12),
+                          foreground='black',
+                          background='lightblue',
+                          wraplength=200,
+                          justify='center')
 label_welcome.grid(column=1, sticky='NWSE')
 
 # Creamos una etiqueta para el resultado
 label_result = ttk.Label(main_window,
-                            text="¡Alguien debe ganar!",
-                            font="Helvetica",
-                            background='lightblue',
-                            wraplength=150,
-                            justify='center')
+                         text="¡Alguien debe ganar!",
+                         font="Helvetica",
+                         background='lightblue',
+                         wraplength=150,
+                         justify='center')
 label_result.grid(row=3, column=1, columnspan=2, sticky='NSWE', padx=20, pady=20)
 
 
@@ -84,10 +84,11 @@ main_window.columnconfigure(2, weight=2)
 
 # Le damos estilo a los botones
 button_style = ttk.Style()
+button_style.theme_use('alt')
 button_style.configure('TButton',
                        font=('Helvetica', 12),
                        foreground='blue',
-                       background='blue',
+                       background='lightblue',
                        width=20,
                        focuscolor='none')
 
